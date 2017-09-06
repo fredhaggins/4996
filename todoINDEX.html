@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+	<title>To Do List for CSC 4996</title>
+   </head>
+	   <body>
+		<head> Insert your task </head>
+		     <form action="to_Do.php" method="post">
+			     <input type="text" name="taskname" required placeholder="Title"  />
+			     <input type="text" name="taskdes" required placeholder="Description of task" />
+			     <input id="submit" type="submit" name="add" value="Add">
+		     </form>
+		<br>
+		
+		<head> View Tasks List</head>
+		     <form action="to_Do.php" method="get">
+			    <input id="submit" type="submit" name="view" value="Click to view your tasks">
+		     </form>
+		<br>
+		
+                <head> Delete Tasks</head>
+		     <form action="to_Do.php" method="post">
+			    <input type="text" name="taskname" required placeholder="Which task # will be deleted" />
+			    <input id="submit" type="submit" name="delete" value="Delete Task ">
+		     </form>
+	  </body>
+</html>
